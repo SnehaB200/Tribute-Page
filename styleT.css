@@ -1,0 +1,124 @@
+:root{
+    --background:#06160e;
+    --hover-color:#24312d;
+    --text-color:#ffd041;
+    --color:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    font-size: 17px;
+    background-color: var(--background);
+    color: var(--color);
+}
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+#title{
+    margin-top: 70px;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+main p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+figcaption{
+    margin: 20px;
+    font-size: 20px;
+    width: 53%;
+}
+.image{
+    width: 230px;
+    height: 230px;
+    border: 2px solid #ffe100;
+    border-radius: 50%;
+    margin-top: 18px;
+    box-shadow: 0px 0px 20px 10px #5a534d;
+    transition: .5s;
+}
+.image:hover{
+    opacity: 0.7;
+}
+#img-caption{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+#img-caption a{
+    font-size: 1.8rem;
+    color: #fb6d00;
+}
+section{
+    max-width: 60%;
+    width: 100%;
+}
+#tribute-Info{
+    width: 50%;
+}
+details{
+    margin-top: 13px;
+    width: 100%;
+    font-family: sans-serif;
+    border: 2px solid #ffff00;
+    box-shadow: 0px 0px 2px 3px #5a534d;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+summary{
+    padding: 20px;
+    font-size: 1.6rem;
+    border: 1px solid #18342b;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+details p{
+    padding: 20px;
+    color: black;
+    background: var(--color);
+    font-size: 1.4rem;
+    transition: .5s;
+}
+details p:hover{
+    color: var(--color);
+    background: var(--hover-color);
+    transform: translate(0);
+}
+h3{
+    margin: 20px;
+}
+a{
+    font-size: 1.5rem;
+    color: #ffe100;
+    text-decoration: none;
+}
+a:hover{
+    color: #fb6d00;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    figcaption{
+        width: 80%;
+        font-size: 15px;
+    }
+}
